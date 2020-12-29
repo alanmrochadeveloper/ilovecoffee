@@ -1,0 +1,17 @@
+@model Product
+<form method="post" asp-action="Update">
+    <input asp-for="Id" value="@Model.Id" readonly/>
+    <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" id="Name" class="form-control" type="text" name="Name">
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <input asp-for="Description" id="Description" class="form-control" type="text" name="Description">
+    </div>
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" id="Price" class="form-control" type="text" name="Price">
+    </div>
+    <button class="btn btn-secondary" type="submit">Update</button>
+</form>
